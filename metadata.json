@@ -1,0 +1,5 @@
+{
+  "name": "CRANE STOCK - クレーンゲーム在庫管理",
+  "description": "クレーンゲームの獲得景品を写真付きで管理。統計機能、JSONバックアップ・復元機能を搭載し、ブラウザで安全にコレクションを記録できます。",
+  "requestFramePermissions": []
+}
