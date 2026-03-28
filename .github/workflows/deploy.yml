@@ -21,7 +21,7 @@ jobs:
       - name: Node.jsセットアップ
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: 依存インストール
         run: npm install
@@ -37,5 +37,10 @@ jobs:
         with:
           path: ./dist
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
       - name: デプロイ
         uses: actions/deploy-pages@v4
