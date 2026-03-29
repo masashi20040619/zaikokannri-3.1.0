@@ -4,5 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/zaikokanrri-3.2.0/',
+  base: '/zaikokannri-3.2.0/',
 })
