@@ -1,20 +1,64 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 在庫管理アプリ v3.2.0
 
-# Run and deploy your AI Studio app
+このリポジトリは、クレーンゲーム向けの在庫管理＆履歴分析アプリです。
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/2d7fc7b1-ae1e-47de-98ca-b131d7688ca8
+## 🌐 公開URL
 
-## Run Locally
+https://masashi20040619.github.io/zaikokannri-3.2.0/
 
-**Prerequisites:**  Node.js
+---
 
+## 📦 主な機能
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+* 在庫管理（±1操作）
+* 売却 / 仕入れ履歴管理（sell / buy）
+* 期間フィルタ（1日〜365日）
+* 総額表示（売却 / 仕入れ）
+* 日別グラフ
+
+  * 回数（buy / sell）
+  * 金額（buy / sell）
+
+---
+
+## 🚀 デプロイについて
+
+このプロジェクトはGitHub Actionsで自動デプロイされます。
+
+mainブランチにpushすると：
+
+1. 自動でbuild
+2. GitHub Pagesに公開
+
+---
+
+## 🛠 開発（ローカル）
+
+Node.jsが必要です。
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## ⚠️ 注意
+
+* データはブラウザのlocalStorageに保存されます
+* 他の人とはデータ共有されません
+
+---
+
+## 📝 更新履歴
+
+### v3.2.0
+
+* 履歴ベース管理を強化
+* 回数グラフ追加
+* 金額グラフ追加
+* UI改善
+
+---
